@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Argenta - Contacto</title>
-    <!-- Enlace CDN para diseño responsivo -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Contacto - Grupo X</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
-<!-- (La clase "d-flex flex-column min-vh-100" hace que el body ocupe toda la pantalla y empuje el footer hacia abajo automáticamente) -->
-<body class="d-flex flex-column min-vh-100">
-
-    <!-- Menú de navegación -->
+<body>
+   
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Tienda Argenta</a>
@@ -21,41 +23,72 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link" href="inicio.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Productos</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="productos.html" role="button" aria-expanded="false">Productos</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="productos1.html">Categoría 1</a></li>
+                        <li><a class="dropdown-item" href="#">Categoría 1</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="productos2.html">Categoría 2</a></li>
+                        <li><a class="dropdown-item" href="#">Categoría 2</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
             </ul>
             </div>
         </div>
     </nav>
-       
-    <!-- (La clase "flex-grow-1" empuja al footer hacia abajo) -->
-    <main class="flex-grow-1 container my-5">
-        <!-- Aquí va el desarrollo de cada uno -->
 
+    <main class="container my-5 flex-grow-1">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="form-container">
+                    <h2 class="text-center mb-4">Envíanos un mensaje</h2>
+                    <p class="text-muted text-center">¿Tienes dudas? Completa el formulario y te respondemos a la
+                        brevedad</p>
 
-        
-        <h1 class="text-center">Título de esta página</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem molestias minima at neque dignissimos architecto labore laboriosam accusantium, fuga est quod ducimus rerum nostrum vitae magnam ad quos provident voluptatibus!</p>
+                    <form class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required
+                                minlength="2" maxlength="35">
+                            <div class="invalid-feedback">Por favor, escribe tu nombre.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com"
+                                required>
+                            <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje o Consulta</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?"
+                                required maxlength="150"></textarea>
+                            <div class="invalid-feedback">No olvides escribir tu mensaje.</div>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="contacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
     <footer class="bg-dark text-white py-2 mt-auto">
         <div class="navbar-expand-lg text-center">
-            <p>© 2026 Fullstack. Todos los derechos reservados.</p>
+            <p>© 2026 Curso de FullStack. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <!-- Este es el script de bootstrap necesarios para que el menú y los modales funcionen -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
