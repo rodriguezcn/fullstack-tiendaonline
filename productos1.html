@@ -42,11 +42,99 @@
     <!-- (La clase "flex-grow-1" empuja al footer hacia abajo) -->
     <main class="flex-grow-1 container my-5">
         <!-- Aquí va el desarrollo de cada uno -->
-
-
         
-        <h1 class="text-center">Título de esta página</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem molestias minima at neque dignissimos architecto labore laboriosam accusantium, fuga est quod ducimus rerum nostrum vitae magnam ad quos provident voluptatibus!</p>
+        <h1 class="text-center">Productos 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nisi officia fuga enim corrupti ea maxime! Ex, velit quidem facilis nisi iusto omnis eveniet distinctio maxime fuga sit ipsum iste.</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://s10.s3c.es/imag/_v0/1200x655/9/c/9/700x420_Productos.jpg" class="card-img-top" alt="Producto1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Parrilla</h5>
+                        <p class="card-text">Descubrí la auténtica experiencia del asado argentino con esta parrilla. Con su amplia superficie de cocción vas a poder preparar los mejores asados.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Ver detalle
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detalles: Abc</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://s10.s3c.es/imag/_v0/1200x655/9/c/9/700x420_Productos.jpg" class="img-fluid mb-3 rounded" alt="Producto1">
+                        <p>Termo de acero inoxidable de 1 litro. Mantiene el agua caliente por 24 horas. Ideal para tus viajes.</p>
+                        <p><strong>Stock disponible:</strong> 15 unidades.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-success">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://s10.s3c.es/imag/_v0/1200x655/9/c/9/700x420_Productos.jpg" class="card-img-top" alt="Producto 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Descripción del producto</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Ver detalle
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://s10.s3c.es/imag/_v0/1200x655/9/c/9/700x420_Productos.jpg" class="card-img-top" alt="Producto 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Producto 3</h5>
+                        <p class="card-text">Descripción del producto</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Ver detalle
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!--         <div class="card row-cols-1" style="width: 18rem;">
+            <img src="https://s10.s3c.es/imag/_v0/1200x655/9/c/9/700x420_Productos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card row-cols-1" style="width: 18rem;">
+            <img src="https://s10.s3c.es/imag/_v0/1200x655/9/c/9/700x420_Productos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card row-cols-1" style="width: 18rem;">
+            <img src="https://s10.s3c.es/imag/_v0/1200x655/9/c/9/700x420_Productos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+ -->        
     </main>
 
     <footer class="bg-dark text-white py-2 mt-auto">
