@@ -14,17 +14,17 @@
     <!-- Menú de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Tienda Argenta</a>
+            <a class="navbar-brand" href="inicio.html">Tienda Argenta</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
+                <a class="nav-link" href="inicio.html">Inicio</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Productos</a>
+                    <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" role="button" aria-expanded="false">Productos</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="productos1.html">Categoría 1</a></li>
                         <li><hr class="dropdown-divider"></li>
@@ -42,11 +42,113 @@
     <!-- (La clase "flex-grow-1" empuja al footer hacia abajo) -->
     <main class="flex-grow-1 container my-5">
         <!-- Aquí va el desarrollo de cada uno -->
-
-
         
-        <h1 class="text-center">Título de esta página</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem molestias minima at neque dignissimos architecto labore laboriosam accusantium, fuga est quod ducimus rerum nostrum vitae magnam ad quos provident voluptatibus!</p>
+        <h1 class="text-center">Productos para regalar</h1>
+        <h6 class="text-center">Ingresá al detalle de cada producto para concer sus características y saber por qué es el mejor regalo.</h6>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagenes/Alfajor1.png" class="card-img-top" alt="Producto1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Alfajores Artesanales</h5>
+                        <p class="card-text">Descubrí el auténtico sabor del dulce regional con estos alfajores. Con su relleno generoso y masa suave vas a poder disfrutar de un producto único. Estos alfajores combinan la receta tradicional con la calidad y frescura que caracteriza nuestros productos.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Ver detalle
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detalles: Alfajores Artesanales</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imagenes/Alfajor2.png" class="img-fluid img-center w-50 d-block mx-auto" alt="Producto1">
+                        <p>Elaborados con harina de trigo seleccionada, textura tierna y desmenuzable. Diseño tradicional con baño de chocolate amargo y terminación manual. Peso de 50 g la unidad, ideal para compartir y consumo diario. Incluye estuche rígido para mejor conservación y transporte del producto.</p>
+                        <p><strong>Precio:</strong> $50.000</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagenes/Vino1.png" class="card-img-top" alt="Producto2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Vino de Altura</h5>
+                        <p class="card-text">Descubrí la auténtica esencia de los viñedos andinos con este vino. Con su perfil aromático y cuerpo intenso vas a poder apreciar los mejores sabores. Este vino combina la fuerza del terruño con la calidad y elegancia que caracteriza nuestros productos.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Ver detalle
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detalles: Vino de Altura</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imagenes/Vino2.png" class="img-fluid img-center w-50 d-block mx-auto" alt="Producto2">
+                        <p>Cosechado en viñedos a 2000 metros, robusto y de gran carácter. Estructura compleja con notas de frutos rojos en tono violáceo profundo. Peso de 1,250 kg por botella, ideal para guarda prolongada y servicio preciso. Incluye corcho de alcornoz natural para mejor evolución y sellado del varietal.</p>
+                        <p><strong>Precio:</strong> $38.100</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagenes/Dulce1.png" class="card-img-top" alt="Producto3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dulce de Leche Artesanal</h5>
+                        <p class="card-text">Descubrí la auténtica receta de campo con este dulce de leche. Con su textura cremosa y dulzor equilibrado vas a poder acompañar tus mejores postres. Este dulce combina la elaboración paciente con la calidad y nobleza que caracteriza nuestros productos.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+                            Ver detalle
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detalles: Dulce de Leche Artesanal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imagenes/Dulce2.png" class="img-fluid img-center w-50 d-block mx-auto" alt="Producto3">
+                        <p>Preparado con leche de tambo propio, consistencia densa y sedosa. Cocción lenta con terminación brillante en tono castaño cobrizo. Peso de 450 g neto, ideal para repostería casera y fácil aplicación. Incluye envase de vidrio térmico para mejor higiene y mantenimiento del sabor.</p>
+                        <p><strong>Precio:</strong> $25.000</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+
     </main>
 
     <footer class="bg-dark text-white py-2 mt-auto">
