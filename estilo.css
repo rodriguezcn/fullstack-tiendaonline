@@ -1,24 +1,24 @@
-body {
+.body-contactos {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f8f9fa;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('imagenes/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-/* Contenedor blanco para el formulario */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .form-container {
     background: #ffffff;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 1);
 }
-
-/* Espaciado para el contenido principal */
-main {
-    flex-grow: 1;
-}
-
-/* Personalización del Footer */
 footer {
     margin-top: auto;
 }
